@@ -547,9 +547,40 @@ form .btn{
 }
 
 
-@media (max-width:600px){            /*mobile phone mode*/
+@media (max-width:600px){     /*mobile phone mode*/
 
+
+
+    #menu-icon{
+        display: initial;}
+
+    header.active #menu-icon{      /*when scroll, change to white*/
+        color:white;
+
+    }
+
+    header .navbar{
+        position:absolute;
+        top: -500px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column ;
+        background-color: var(--third-color);
+        text-align: right;
+    }
+
+    .navbar.active{
+        top:100%
+    }
+
+    .navbar a{
+        padding: 1.5rem;
+        display: block;
+        color: white;
     
+    }
+
 
     .home-text span{
         font-size: 0.8rem;
@@ -558,17 +589,10 @@ form .btn{
     .home-text h1{
         font-size: 2rem;
     }
-
-    .about-img{
-       padding: 50px;
-    }
-
-    .shop-img img{
-        height: 50px;
-        width: 40px;
+    
     }
 
 
-}
+
 
 
